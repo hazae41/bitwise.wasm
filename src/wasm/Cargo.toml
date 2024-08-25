@@ -1,0 +1,21 @@
+[package]
+name = "bitwise_wasm"
+version = "1.0.0"
+authors = ["hazae41 <4405263+hazae41@users.noreply.github.com>"]
+edition = "2021"
+
+description = "Bitwise operations for WebAssembly"
+repository = "https://github.com/hazae41/bitwise.wasm"
+license = "Unlicense"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[profile.release]
+lto = true
+debug = false
+opt-level = 3
+
+[dependencies]
+wasm-bindgen = { version = "0.2.93", default-features = false }
+memory_wasm = { path = "../../node_modules/@hazae41/memory.wasm/dist/wasm"}

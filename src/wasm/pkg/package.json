@@ -1,0 +1,24 @@
+{
+  "name": "bitwise_wasm",
+  "type": "module",
+  "collaborators": [
+    "hazae41 <4405263+hazae41@users.noreply.github.com>"
+  ],
+  "description": "Bitwise operations for WebAssembly",
+  "version": "1.0.0",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hazae41/bitwise.wasm"
+  },
+  "files": [
+    "bitwise_wasm_bg.wasm",
+    "bitwise_wasm.js",
+    "bitwise_wasm.d.ts"
+  ],
+  "main": "bitwise_wasm.js",
+  "types": "bitwise_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
