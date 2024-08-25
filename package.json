@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@hazae41/bitwise.wasm",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Bitwise operations for WebAssembly",
   "homepage": "https://github.com/hazae41/bitwise.wasm",
   "repository": "github:hazae41/bitwise.wasm",
