@@ -1,27 +1,9 @@
 /* tslint:disable */
 /* eslint-disable */
-/**
-* @param {Memory} bits
-* @returns {Memory}
-*/
 export function bitwise_pack_right(bits: Memory): Memory;
-/**
-* @param {Memory} bits
-* @returns {Memory}
-*/
 export function bitwise_pack_left(bits: Memory): Memory;
-/**
-* @param {Memory} bytes
-* @returns {Memory}
-*/
 export function bitwise_unpack(bytes: Memory): Memory;
-/**
-* @param {Memory} bytes
-* @param {Memory} mask
-*/
 export function bitwise_xor_mod(bytes: Memory, mask: Memory): void;
-/**
-*/
 export class Memory {
   [Symbol.dispose](): void;
 /**
@@ -54,7 +36,9 @@ export interface InitOutput {
   readonly memory_new: (a: number, b: number) => number;
   readonly memory_ptr: (a: number) => number;
   readonly memory_len: (a: number) => number;
+  readonly __wbindgen_export_0: WebAssembly.Table;
   readonly __wbindgen_malloc: (a: number, b: number) => number;
+  readonly __wbindgen_start: () => void;
 }
 
 export type SyncInitInput = BufferSource | WebAssembly.Module;
